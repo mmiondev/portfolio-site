@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { Flex } from "@chakra-ui/react";
-import { Header } from "@/components";
+import { Header, IntroSection } from "@/components";
+
+export const heightMinusHeader = "calc(100vh - 62px)";
 
 export default function Home() {
   return (
@@ -11,11 +13,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Flex direction="column" minH="100vh" bgColor="primary.600">
+      <Flex
+        as="main"
+        direction="column"
+        bgColor="primary.600"
+        border="solid 1px green"
+      >
+        <Flex direction="column" bgColor="primary.600">
           <Header />
+          <IntroSection />
         </Flex>
-      </main>
+      </Flex>
     </>
   );
 }

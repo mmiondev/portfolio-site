@@ -47,10 +47,10 @@ const disabledColors = {
       bgColor: 'secondary.500',
       color: 'neutral.900',
       _hover: {
-        bgColor: 'secondary.300',
+        bgColor: 'tertiary.500',
       },
       _active: {
-        bgColor: 'secondary.600',
+        bgColor: 'tertiary.600',
       },
     },
     secondary: {
@@ -63,27 +63,18 @@ const disabledColors = {
         bgColor: 'secondary.500',
       },
     },
-    ghost: {
-      bgColor: '#FFF',
-      color: 'primary.500',
-      border: '1px',
-      borderColor: 'primary.500',
+    icon:{
+      bgColor: 'transparent',
+      color: 'secondary.500',
       _hover: {
-        bgColor: 'neutral.200',
+        color: 'tertiary.500',
       },
       _active: {
-        bgColor: 'primary.50',
+        color: 'tertiary.600',
       },
-      _focus: {
-        border: '1px',
-        borderColor: 'primary.500',
-      },
-      _disabled: {
-        bgColor: 'neutral.100',
-        borderColor: 'neutral.400',
-      },
-    },
+    }
   }
+
   
   const defaultProps = {
     size: 'md',
