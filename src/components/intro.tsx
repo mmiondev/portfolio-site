@@ -22,7 +22,7 @@ export const Intro = (props: StackProps) => {
         <Text fontSize={{ base: "4xl", sm: "5xl" }}>Hello!</Text>
         <Text fontSize={{ base: "2xl", sm: "4xl" }}>My name is Matthew</Text>
         <Text fontSize={{ base: "xl", sm: "3xl" }}>
-          I&apos;m a Fullstack Web Developer
+          I&apos;m a Frontend Developer
         </Text>
       </VStack>
       <Text
