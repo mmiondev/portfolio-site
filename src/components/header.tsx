@@ -31,7 +31,7 @@ export const Header = (props: FlexProps) => {
   return (
     <Flex
       py={`${headerPaddingY}px`}
-      justify={{ base: "flex-end", sm: "center" }}
+      justify={{ base: "flex-end", md: "center" }}
       bgColor="primary.600"
       shadow="xl"
       px="10"
@@ -48,7 +48,7 @@ export const Header = (props: FlexProps) => {
             icon={<HamburgerIcon color="secondary.500" boxSize="10" />}
             variant="outline"
           />
-          <MenuList bgColor="neutral.200">
+          <MenuList bgColor="neutral.300">
             {sectionButtons.map((section) => (
               <MenuItem
                 as={Button}
