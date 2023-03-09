@@ -19,7 +19,7 @@ export const ContactSection = (props: FlexProps) => {
       as="section"
       direction="column"
       id="contact"
-      bgColor="neutral.200"
+      bgColor="neutral.300"
       py={{ base: "10%", sm: "2%" }}
       {...props}
     >
@@ -34,33 +34,47 @@ export const ContactSection = (props: FlexProps) => {
             <Text>mmiondev@gmail.com</Text>
           </HStack>
         </VStack>
-        <HStack>
-          <Link href="https://github.com/mmiondev" isExternal>
-            <AnimatedIcon icon={GithubIcon} {...iconProps} />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/matthew-mion-813b75148/"
-            isExternal
-          >
-            <AnimatedIcon icon={LinkedinIcon} {...iconProps} />
-          </Link>
-          <Button
-            variant="iconSecondary"
-            onClick={() =>
-              window.open(
-                String(`mailto:mmiondev^gmail.com`).replace("^", "@"),
-                "_self"
-              )
-            }
-          >
-            <AnimatedIcon icon={EmailIcon} {...iconProps} />
-          </Button>
-          <Link
-            href="https://docs.google.com/document/d/141IMvHtL-4Wlm6-RK3bnHdmzMnRTconPh_LfeD4nblw/edit?usp=sharing"
-            isExternal
-          >
-            <AnimatedIcon icon={PaperIcon} {...iconProps} />
-          </Link>
+        <HStack spacing="4">
+          <VStack>
+            <Link href="https://github.com/mmiondev" isExternal>
+              <AnimatedIcon icon={GithubIcon} {...iconProps} />
+            </Link>
+            <Text fontSize="sm">Github</Text>
+          </VStack>
+          <VStack>
+            <Link
+              href="https://www.linkedin.com/in/matthew-mion-813b75148/"
+              isExternal
+            >
+              <AnimatedIcon icon={LinkedinIcon} {...iconProps} />
+            </Link>
+            <Text fontSize="sm">LinkedIn</Text>
+          </VStack>
+          <VStack>
+            <Button
+              variant="iconSecondary"
+              py="0"
+              px="0"
+              onClick={() =>
+                window.open(
+                  String(`mailto:mmiondev^gmail.com`).replace("^", "@"),
+                  "_self"
+                )
+              }
+            >
+              <AnimatedIcon icon={EmailIcon} {...iconProps} />
+            </Button>
+            <Text fontSize="sm">Email</Text>
+          </VStack>
+          <VStack>
+            <Link
+              href="https://drive.google.com/file/d/1RIHOGfItIj4h4jFIM5XDXI8ZRQWY2lpz/view?usp=sharing"
+              isExternal
+            >
+              <AnimatedIcon icon={PaperIcon} {...iconProps} />
+            </Link>
+            <Text fontSize="sm">Resume</Text>
+          </VStack>
         </HStack>
       </VStack>
     </Flex>

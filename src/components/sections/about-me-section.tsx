@@ -21,13 +21,13 @@ export const AboutMeSection = (props: FlexProps) => {
       {...props}
     >
       <Stack
-        direction={{ base: "column", lg: "row" }}
+        direction={{ base: "column", xl: "row" }}
         spacing="16"
         pt="15%"
         px={{ base: "2", md: "8" }}
         h="100%"
       >
-        <AboutMeCopy />
+        <AboutMeCopy boxSize={{ base: "100%", xl: "50%" }} />
         <AboutMeCard />
       </Stack>
       <ScrollButton

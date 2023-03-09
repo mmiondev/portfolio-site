@@ -30,7 +30,7 @@ export const ProjectsSection = (props: FlexProps) => {
     >
       <VStack spacing="10" boxSize="100%">
         <Text
-          mt={{ base: "10%", md: "5%" }}
+          mt={{ base: "15%", md: "5%" }}
           textAlign="center"
           fontSize="4xl"
           color="primary.600"
@@ -38,7 +38,13 @@ export const ProjectsSection = (props: FlexProps) => {
           Recent Projects
         </Text>
         <Box
-          w={{ base: "100%", md: "50%" }}
+          w={{
+            base: "300px",
+            sm: "400px",
+            md: "500px",
+            lg: "600px",
+            xl: "700px",
+          }}
           borderRadius="lg"
           transition="transform 1s"
           overflow="hidden"
@@ -75,7 +81,7 @@ export const ProjectsSection = (props: FlexProps) => {
                 Typescript.
               </Text>
               <Stack
-                direction={{ base: "column", sm: "row" }}
+                direction={{ base: "column", md: "row" }}
                 align="center"
                 justify="space-evenly"
                 w="100%"
