@@ -44,7 +44,7 @@ const RecentWorkTab = () => {
             <Text fontSize="xs">Dec 2021-Feb 2023</Text>
           </HStack>
           <Text fontSize="xl">Frontend Engineer</Text>
-          <List spacing={3} maxH="220px" overflow="auto">
+          <List spacing={3} maxH="250px" overflow="auto">
             {recentWorkTaskList.map((task) => (
               <ListItem key="task">
                 <ListIcon as={ChevronRightIcon} />
