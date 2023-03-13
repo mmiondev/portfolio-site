@@ -8,6 +8,7 @@ import {
   ContactSection,
   ParticlesBackground,
 } from "@/components";
+import { RevealInView } from "@/components/reusable/reveal-in-view";
 
 //TODO: add fade as component mounts
 export default function Home() {
