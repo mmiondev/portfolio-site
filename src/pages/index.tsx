@@ -6,9 +6,11 @@ import {
   Header,
   IntroSection,
   ContactSection,
+  ParticlesBackground,
 } from "@/components";
+import { RevealInView } from "@/components/reusable/reveal-in-view";
 
-// TODO: add tsParticles
+//TODO: add fade as component mounts
 export default function Home() {
   return (
     <>
@@ -20,6 +22,7 @@ export default function Home() {
       </Head>
       <Flex as="main" direction="column" bgColor="primary.600">
         <Flex direction="column" bgColor="primary.600">
+          <ParticlesBackground />
           <Header />
           <IntroSection />
           <AboutMeSection />

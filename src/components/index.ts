@@ -9,3 +9,4 @@ export * from "./about-me-copy";
 export * from "./about-me-card";
 export * from "./about-me-card-header";
 export * from "./about-me-card-tabs";
+export * from "./particles-background";
