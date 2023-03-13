@@ -54,9 +54,6 @@ export const ParticlesBackground = () => {
           color: {
             value: "#FFFFFF",
           },
-          collisions: {
-            enable: true,
-          },
           move: {
             direction: "none",
             enable: true,
