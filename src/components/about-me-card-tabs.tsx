@@ -26,7 +26,6 @@ const recentWorkTaskList = [
   "Implemented automated UI testing using Storybook to prevent bugs and test components in isolation, reducing development time by 20%",
 ];
 
-// TODO: fix date display in mobile view
 const RecentWorkTab = () => {
   return (
     <TabPanel>
