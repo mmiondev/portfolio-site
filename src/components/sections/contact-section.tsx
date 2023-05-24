@@ -70,7 +70,7 @@ export const ContactSection = (props: FlexProps) => {
             </VStack>
             <VStack>
               <Link
-                href="https://drive.google.com/file/d/1RIHOGfItIj4h4jFIM5XDXI8ZRQWY2lpz/view?usp=sharing"
+                href="https://drive.google.com/file/d/1ya6SBPg557RiLxZoBwWwJU-DOhayqcI9/view?usp=sharing"
                 isExternal
               >
                 <AnimatedIcon icon={PaperIcon} {...iconProps} />
